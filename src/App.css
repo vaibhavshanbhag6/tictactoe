@@ -21,6 +21,7 @@
   border: 3px solid #2c3e50;
   border-radius: 2px;
   padding: 0%;
+  color: #000;
   font-family: Helvetica;
   font-weight: bold;
   font-size: 3rem;
@@ -49,5 +50,5 @@ h1{
   font-family: Helvetica;
   font-weight: bold;
   font-size: 1.5rem;
-  
+  color: #000;
 }
