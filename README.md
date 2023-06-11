@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Visit site- (https://vaibhavreactgame.netlify.app/)
+Visit site- (https://vaibhavtictactoegame.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
