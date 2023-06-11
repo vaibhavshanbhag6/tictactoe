@@ -23,7 +23,7 @@ const Square = ({value, index}) => {
                     setGame("X");
                 else if(temp[0] === "X" && temp[4] === "X"&&temp[8] === "X")
                     setGame("X");
-                else if(temp[2] === "X" && temp[5] === "X"&&temp[6] === "X")
+                else if(temp[2] === "X" && temp[4] === "X"&&temp[6] === "X")
                     setGame("X");
 
  
@@ -48,7 +48,7 @@ const Square = ({value, index}) => {
                     setGame("O");
                 else if(temp[0] === "O" && temp[4] === "O"&&temp[8] === "O")
                     setGame("O");
-                else if(temp[2] === "O" && temp[5] === "O"&&temp[6] === "O")
+                else if(temp[2] === "O" && temp[4] === "O"&&temp[6] === "O")
                     setGame("O");
                 setTurn("X");
             }
