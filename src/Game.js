@@ -19,7 +19,6 @@ const Game = () => {
     <div className='result'>
     {game ? <h1>Winner - {game}</h1> : <h1>Turn - {turn}</h1>}
     </div>
-    <div className="screen">
     <div className="gamezone">
       <Square value={{turn, setTurn, play, setPlay, game, setGame}} index={0}/>
       <Square value={{turn, setTurn, play, setPlay, game, setGame}} index={1}/>
@@ -33,7 +32,6 @@ const Game = () => {
       <Square value={{turn, setTurn, play, setPlay, game, setGame}} index={7}/>
       <Square value={{turn, setTurn, play, setPlay, game, setGame}} index={8}/>
 
-    </div>
     </div>
     <div  className='reset'>
     {game && <button className='resetBtn' onClick={resetGame}>Restart Game</button>}
