@@ -16,9 +16,11 @@ const Game = () => {
   
   return (
     <div>
+
     <div className='result'>
     {game ? <h1>Winner - {game}</h1> : <h1>Turn - {turn}</h1>}
     </div>
+
     <div className="screen">
     <div className="gamezone">
       <Square value={{turn, setTurn, play, setPlay, game, setGame}} index={0}/>
@@ -35,9 +37,11 @@ const Game = () => {
 
     </div>
     </div>
+
     <div  className='reset'>
     {game && <button className='resetBtn' onClick={resetGame}>Restart Game</button>}
     </div>
+    
     </div>
     
   )
