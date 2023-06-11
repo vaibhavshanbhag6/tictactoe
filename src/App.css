@@ -21,7 +21,6 @@
   border: 3px solid #2c3e50;
   border-radius: 2px;
   font-family: Helvetica;
-  font-weight: bold;
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -45,11 +44,9 @@ h1{
 
 .resetBtn{
   margin-top: 2rem;
-
   border: 3px solid #2c3e50;
   border-radius: 2px;
   font-family: Helvetica;
-  font-weight: bold;
   font-size: 1.5rem;
   
 }
