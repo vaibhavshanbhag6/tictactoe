@@ -42,7 +42,7 @@ const Square = ({value, index}) => {
     }
 
   return (
-    <button type="button" className='square' onClick={handleClick}>{play[index]}</button>
+    <button className='square' onClick={handleClick}>{play[index]}</button>
   )
 }
 
