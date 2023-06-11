@@ -1,6 +1,25 @@
 const Square = ({value, index}) => {
     const {turn, setTurn, play, setPlay, game, setGame} = value;
 
+    const checkWinner = (player) =>{
+        if(play[0] === player && play[1] === player && play[2] === player)
+                    setGame(player);
+                else if(play[3] === player && play[4] === player && play[5] === player)
+                    setGame(player);
+                else if(play[6] === player && play[7] === player && play[8] === player)
+                    setGame(player);
+                else if(play[0] === player && play[3] === player && play[6] === player)
+                    setGame(player);
+                else if(play[1] === player && play[4] === player && play[7] === player)
+                    setGame(player);
+                else if(play[2] === player && play[5] === player && play[8] === player)
+                    setGame(player);
+                else if(play[0] === player && play[4] === player && play[8] === player)
+                    setGame(player);
+                else if(play[2] === player && play[4] === player && play[6] === player)
+                    setGame(player);
+    }
+
 
     const handleClick = () =>{
         if(play[index] === null && !game){
@@ -8,48 +27,14 @@ const Square = ({value, index}) => {
                 let temp = play;
                 temp[index] = "X";
                 setPlay(temp);
-
-                if(temp[0] === "X" && temp[1] === "X"&&temp[2] === "X")
-                    setGame("X");
-                else if(temp[3] === "X" && temp[4] === "X"&&temp[5] === "X")
-                    setGame("X");
-                else if(temp[6] === "X" && temp[7] === "X"&&temp[8] === "X")
-                    setGame("X");
-                else if(temp[0] === "X" && temp[3] === "X"&&temp[6] === "X")
-                    setGame("X");
-                else if(temp[1] === "X" && temp[4] === "X"&&temp[7] === "X")
-                    setGame("X");
-                else if(temp[2] === "X" && temp[5] === "X"&&temp[8] === "X")
-                    setGame("X");
-                else if(temp[0] === "X" && temp[4] === "X"&&temp[8] === "X")
-                    setGame("X");
-                else if(temp[2] === "X" && temp[4] === "X"&&temp[6] === "X")
-                    setGame("X");
-
- 
+                checkWinner("X");
                 setTurn("O");
             }
             else  {
                 let temp = play;
                 temp[index] = "O";
                 setPlay(temp);
-
-                if(temp[0] === "O" && temp[1] === "O"&&temp[2] === "O")
-                    setGame("O");
-                else if(temp[3] === "O" && temp[4] === "O"&&temp[5] === "O")
-                    setGame("O");
-                else if(temp[6] === "O" && temp[7] === "O"&&temp[8] === "O")
-                    setGame("O");
-                else if(temp[0] === "O" && temp[3] === "O"&&temp[6] === "O")
-                    setGame("O");
-                else if(temp[1] === "O" && temp[4] === "O"&&temp[7] === "O")
-                    setGame("O");
-                else if(temp[2] === "O" && temp[5] === "O"&&temp[8] === "O")
-                    setGame("O");
-                else if(temp[0] === "O" && temp[4] === "O"&&temp[8] === "O")
-                    setGame("O");
-                else if(temp[2] === "O" && temp[4] === "O"&&temp[6] === "O")
-                    setGame("O");
+                checkWinner("O");
                 setTurn("X");
             }
                 
