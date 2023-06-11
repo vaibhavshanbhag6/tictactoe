@@ -18,7 +18,7 @@ const Game = () => {
     <div>
 
     <div className='result'>
-    {game ? <h1>Winner - {game}</h1> : <h1>Turn - {turn}</h1>}
+    {game ? (game === "Draw" ? <h1>Draw</h1> : <h1>Winner - {game}</h1>) : <h1>Turn - {turn}</h1>}
     </div>
 
     <div className="screen">
@@ -41,7 +41,7 @@ const Game = () => {
     <div  className='reset'>
     {game && <button className='resetBtn' onClick={resetGame}>Restart Game</button>}
     </div>
-    
+
     </div>
     
   )

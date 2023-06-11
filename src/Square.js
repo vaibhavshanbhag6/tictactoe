@@ -2,7 +2,7 @@ const Square = ({value, index}) => {
     const {turn, setTurn, play, setPlay, game, setGame} = value;
 
     const checkWinner = (player) =>{
-        if(play[0] === player && play[1] === player && play[2] === player)
+                if(play[0] === player && play[1] === player && play[2] === player)
                     setGame(player);
                 else if(play[3] === player && play[4] === player && play[5] === player)
                     setGame(player);
@@ -18,6 +18,8 @@ const Square = ({value, index}) => {
                     setGame(player);
                 else if(play[2] === player && play[4] === player && play[6] === player)
                     setGame(player);
+                else if(!play.includes(null))
+                    setGame("Draw");
     }
 
 
