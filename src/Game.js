@@ -36,6 +36,7 @@ const Game = () => {
   const resetGame =()=>{
     setGame(null);
     setPlay([null,null,null,null,null,null,null,null,null]);
+    setTurn("X");
   }
 
   const checkWinner = (player) =>{
