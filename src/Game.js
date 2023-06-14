@@ -29,7 +29,7 @@ const Game = () => {
       checkWinner("O");
       setTurn("X");
       console.log(rand,play);
-    },1000)
+    },700)
     
   }
 
