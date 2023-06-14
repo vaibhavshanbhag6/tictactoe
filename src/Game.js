@@ -18,7 +18,7 @@ const Game = () => {
     <div>
 
     <div className='result'>
-    {game ? (game === "Draw" ? <h1>Draw</h1> : <h1>Winner - {game}</h1>) : <h1>Turn - {turn}</h1>}
+    {game ? (game === "Draw" ? <h1>Draw</h1> : <h1>Winner - {game}</h1>) : <h1>{turn} Turn</h1>}
     </div>
 
     <div className="screen">
